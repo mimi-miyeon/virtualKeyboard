@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Keyboard</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="keyboard.css">
+</head>
+<body>
+  
+  <h1>Virtual Keyoard w/ HTML, CSS & JS</h1>
+  <h3>Features</h3>
+  <ul>
+    <li>Easy to integrate</li>
+    <li>Responsive</li>
+    <li>Vanilla JS (<strong>no libraries required!</strong>)</li>
+  </ul>
+
+  <main class="keyboard keyboard--hidden">
+    <div class="keyboard__keys">
+      <button class="keyboard__key">1</button>
+      <button class="keyboard__key">2</button>
+      <button class="keyboard__key">3</button>
+      <button class="keyboard__key">4</button>
+      <button class="keyboard__key">5</button>
+      <button class="keyboard__key">6</button>
+      <button class="keyboard__key">7</button>
+      <button class="keyboard__key">8</button>
+      <button class="keyboard__key">9</button>
+      <button class="keyboard__key">0</button>
+      <button class="keyboard__key keyboard__key--wide" id="backspace">
+        <i class="material-icons">backspace</i>
+      </button>
+      <br />
+      <button class="keyboard__key">q</button>
+      <button class="keyboard__key">w</button>
+      <button class="keyboard__key">e</button>
+      <button class="keyboard__key">r</button>
+      <button class="keyboard__key">t</button>
+      <button class="keyboard__key">y</button>
+      <button class="keyboard__key">u</button>
+      <button class="keyboard__key">i</button>
+      <button class="keyboard__key">o</button>
+      <button class="keyboard__key">p</button>
+      <br />
+      <button class="keyboard__key keyboard__key--wide keyboard__key--activatable" id="caps">
+        <i class="material-icons">keyboard_capslock</i>
+      </button>
+      <button class="keyboard__key">a</button>
+      <button class="keyboard__key">s</button>
+      <button class="keyboard__key">d</button>
+      <button class="keyboard__key">f</button>
+      <button class="keyboard__key">g</button>
+      <button class="keyboard__key">h</button>
+      <button class="keyboard__key">j</button>
+      <button class="keyboard__key">k</button>
+      <button class="keyboard__key">l</button>
+      <button class="keyboard__key keyboard__key--wide">
+        <i class="material-icons">keyboard_return</i>
+      </button>
+      <br />
+      <button class="keyboard__key keyboard__key--wide keyboard__key--dark" id="done">
+        <i class="material-icons">check_circle</i>
+      </button>
+      <button class="keyboard__key">z</button>
+      <button class="keyboard__key">x</button>
+      <button class="keyboard__key">c</button>
+      <button class="keyboard__key">v</button>
+      <button class="keyboard__key">b</button>
+      <button class="keyboard__key">n</button>
+      <button class="keyboard__key">m</button>
+      <button class="keyboard__key">,</button>
+      <button class="keyboard__key">.</button>
+      <button class="keyboard__key">?</button>
+      <br />
+      <button class="keyboard__key keyboard__key--extra-wide">
+        <i class="material-icons">space_bar</i>
+      </button>
+    </div>
+  </main>
+
+  <textarea class="use--keyboard-input" style="position: absolute; top: 130px; right: 30px; width: 300px"></textarea>
+  <script src="keyboard.js"></script>
+</body>
+</html>
